@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto con AluMaster - Envíanos tus consultas o visítanos.">
+    <title>inscripciones curso</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Enlace a archivo de estilos -->
+</head>
+<body>
+
+    <!-- Header con logo y menú de navegación -->
+    <header>
+            <h1>Inscripciones</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/curso">Cursos</a></li>
+                <li><a href="/usuario">Usuarios</a></li>
+                <li><a href="/producto">Productos</a></li>
+                <li><a href="/libro">Libros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de contacto -->
+    <section id="curso" class="curso">
+        <h2>Inscripcion en cursos</h2>
+
+        <!-- Formulario de contacto -->
+        <form action="/proceso_1" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text"name="nombre"> <br>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido"> <br>
+
+          <label for="clase">Clase:</label>
+          <select name="clase" id="clase">
+              <option value="guerrero">Guerrero</option>
+              <option value="mago">Mago</option>
+              <option value="druida">Druida</option>
+              <option value="cazador">Cazador</option>
+              <option value="paladin">Paladín</option>
+              <option value="picaro">Pícaro</option>
+              <option value="brujo">Brujo</option>
+              <option value="sacerdote">Sacerdote</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Footer con información de derechos de autor -->
+    <footer>
+        <p>&copy; Zefis. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

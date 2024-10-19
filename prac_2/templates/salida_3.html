@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Enlace a archivo de estilos -->
+</head>
+<body>
+    <header>
+            <h1>Registros de productos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/curso">Cursos</a></li>
+                <li><a href="/usuario">Usuarios</a></li>
+                <li><a href="/producto">Productos</a></li>
+                <li><a href="/libro">Libros</a></li>
+            </ul>
+    </header>
+    <h1>DATOS DE LOS PRODUCTOS </h1>
+    <p>los datos recividos de los productos son: </p>
+    <p>Producto: {{producto}}</p>
+    <p>Categoria Seleccionada: {{categoria}}</p>
+    <p>Existencia: {{existencia}}</p>
+    <p>Precio: {{precio}}</p>
+    <br><br>
+    <header>
+            <h1>Registros</h1>
+        <h1>Gracias por su tiempo</h1>
+    </header>
+    
+</body>
+</html>

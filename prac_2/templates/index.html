@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carpintería en Aluminio AluMaster - Expertos en fabricación de estructuras de aluminio.">
+    <title>AluMaster - Carpintería en Aluminio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Enlace a archivo de estilos -->
+</head>
+<body>
+
+    <!-- Header con logo y menú de navegación -->
+    <header>
+        <div class="logo">
+            <img src="static/be15e45935f2ad31c487ceba95a593e6.jpg" alt="Logo de AluMaster">
+            <h1>Formularios de Registros</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/curso">Cursos</a></li>
+                <li><a href="/usuario">Usuarios</a></li>
+                <li><a href="/producto">Productos</a></li>
+                <li><a href="/libro">Libros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="inicio" class="hero">
+        <h2>Bienvenido a los formualrios de registros</h2>
+        <p>Introduce los valores en los campos que desee</p><br>
+    </section>
+
+    <section id="curso" class="curso">
+        <h2>Inscripcion en cursos</h2>
+
+        <!-- Formulario de contacto -->
+        <form action="/proceso_1" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text"name="nombre"> <br>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido"> <br>
+
+          <label for="clase">Clase:</label>
+          <select name="clase" id="clase">
+              <option value="guerrero">Guerrero</option>
+              <option value="mago">Mago</option>
+              <option value="druida">Druida</option>
+              <option value="cazador">Cazador</option>
+              <option value="paladin">Paladín</option>
+              <option value="picaro">Pícaro</option>
+              <option value="brujo">Brujo</option>
+              <option value="sacerdote">Sacerdote</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <!-- Sección de testimonios y ventajas -->
+    <section id="usuario" class="usuario">
+        <h2>Registros usuarios</h2>
+
+        <!-- Formulario de contacto -->
+        <form action="/proceso_2" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text"name="nombre"> <br>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido"> <br>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" name="email"><br>
+          <label for="password">Contraseña:</label>
+          <input type="password" name="password"><br>
+          <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Sección de redes sociales -->
+    <section id="prod" class="prod">
+        <h2>Registro de productos</h2>
+
+        <!-- Formulario de contacto -->
+        <form action="/proceso_3" method="post">
+          <label for="producto">Producto:</label>
+          <input type="text"name="producto"> <br>
+          <label for="categoria">Categoria:</label>
+          <select name="categoria" id="categoria">
+              <option value="guerrero">Guerrero</option>
+              <option value="mago">Mago</option>
+              <option value="druida">Druida</option>
+              <option value="cazador">Cazador</option>
+              <option value="paladin">Paladín</option>
+              <option value="picaro">Pícaro</option>
+              <option value="brujo">Brujo</option>
+              <option value="sacerdote">Sacerdote</option>
+          </select><br>
+          <label for="existencia">Existencia:</label>
+          <input type="text" name="existencia"> <br>
+          <label for="precio">Precio:</label>
+          <input type="number" name="precio" step="0.01"> <br>
+
+
+          <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+
+    <!-- Sección de contacto -->
+    <section id="usuario" class="usuario">
+        <h2>Registros libros</h2>
+
+        <!-- Formulario de contacto -->
+        <form action="/proceso_4" method="post">
+          <label for="titulo">Titulo:</label>
+          <input type="text"name="titulo"> <br>
+          <label for="autor">Autor:</label>
+          <input type="text" name="autor"> <br>
+          <label for="resumen">Resumen:</label>
+          <input type="text" name="resumen" rows="4"><br>
+          <label for="tanque">
+            <input type="checkbox" id="tanque" name="roles" value="tanque">
+            Tanque
+        </label><br>
+
+        <label for="sanador">
+            <input type="checkbox" id="sanador" name="roles" value="sanador">
+            Sanador
+        </label><br>
+
+        <label for="dps">
+            <input type="checkbox" id="dps" name="roles" value="dps">
+            DPS
+        </label><br>
+          <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <section id="redes" class="social-media">
+        <h2>Síguenos en nuestras redes sociales</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/AluMaster" target="_blank"><img src="static/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/AluMaster" target="_blank"><img src="static/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/AluMaster" target="_blank"><img src="static/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </section>
+    <!-- Footer con información de derechos de autor -->
+    <footer>
+        <p>&copy; Zefis. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
